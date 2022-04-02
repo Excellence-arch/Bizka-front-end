@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <div className="container">
         <a href="#" className="navbar-brand mb-0 h1" width="30" height="30">
           <img
             className="d-inline-block align-top"
@@ -53,14 +53,14 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button type="text" className="btn btn-lg ">
+        <button type="submit" className="btn btn-outline-primary btn-lg ">
           Login
         </button>
-        <button type="stext" className="btn btn-lg btn-primary">
+        <button type="button" className="btn  btn-lg btn-primary">
           Register
         </button>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 
