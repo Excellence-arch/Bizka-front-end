@@ -6,6 +6,7 @@ import "animate.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
+import { logo } from "./assets/logo.PNG";
 
 ReactDOM.render(
   <React.StrictMode>
