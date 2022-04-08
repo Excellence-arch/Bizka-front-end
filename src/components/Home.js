@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "../index.css"
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
   return (
     <>
         <section className="container h-50">
@@ -8,7 +12,7 @@ const Home = () => {
                 <div className="col-6">
                     <h2>A portfolio Hosting Platform for Data Analysts</h2>
                     <p>No more stress. Upload your works. Share them to anyone. Increase your competence.</p>
-                    <button className="text-white btn btn-primary">Get Started for free</button>
+                    <button className="text-white btn bg-bizka" onClick={() => navigate("/register")}>Get Started for free</button>
                 </div>
                 <div className="shadow col-6">
                     <img src="graphs" alt="graph" />
@@ -36,7 +40,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className="container-fluid h-50 bg-primary">
+        <section className="container-fluid h-50 bg-bizka">
             <div className="text-center container">
                 <p className="text-white h3">What is Bizka?</p>
                 <p className="text-white mb-4">Bizka is a platform specifically made for data analysts to share  their works to the public without using any forom of code.</p>
