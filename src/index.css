@@ -49,10 +49,6 @@
   border-color: #dc3545;
 }
 
-/* .bizka-bg-img {
-  background-color: rgba(70, 100, 190, 1) !important;
-  background-image: url('../public/assets/registerbg.jfif');
-  /* width: '50vw';
-  height: '100vh'; */
-  /* background-size: cover !important; */
-/* } */
+.bizka {
+  background-color: #01519c;
+}
