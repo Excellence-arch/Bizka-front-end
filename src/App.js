@@ -18,14 +18,14 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" caseSensitive="false" element={<Home/>}/>
         <Route path="/login" caseSensitive="false" element={<Login/>} />
         <Route path="/register" caseSensitive="false" element={<Register allCustomers={allCustomers} addNewCustomer={addNewCustomer} />} />
         <Route path="/forgot-password" />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -1,5 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../index.css"
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const Home = () => {
 
@@ -7,6 +9,7 @@ const Home = () => {
 
   return (
     <>
+    <Navbar/>
         <section className="container h-50">
             <div className="row">
                 <div className="col-6">
@@ -69,6 +72,7 @@ const Home = () => {
             </div>
             <Link to="" className="link-black">Read more Blog Posts</Link>
         </section>
+        <Footer/>
     </>
   )
 }

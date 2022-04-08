@@ -16,6 +16,17 @@
   background-color: #01515C !important;
 }
 
+.btn-outline-bizka {
+  color: #01519C !important;
+  border-color: #01519C !important;
+}
+
+.btn-outline-bizka:hover {
+  color: #fff !important;
+  background-color: #01519C !important;
+  border-color: #01519C !important;
+}
+
 .bizka-form {
   display: block;
   width: 100%;

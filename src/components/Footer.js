@@ -5,6 +5,7 @@ import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col text-primary">
+        <div className="col text-bizka">
           <h6 className="text-uppercase mt-5 mb-2 nav flex-column font-weight-bold text-important">
             Contact US
           </h6>
@@ -31,87 +32,87 @@ const Footer = () => {
             <li className="nav-item mb-2">Find a Client</li>
           </ul>
         </div>
-        <div className="col text-primary">
+        <div className="col text-bizka">
           <h6 className="col text-uppercase mt-5 nav flex-column font-weight-bold">
             Services
           </h6>
         </div>
 
-        <div className="col-sm-3 text-primary">
+        <div className="col-sm-3 text-bizka">
           <h6 className="text-uppercase mt-5 mb-2 nav flex-column font-weight-bold text-important">
             Products
           </h6>
           <ul className="list-unstyled nav flex-column">
             <li className="nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="/">
                 Contact US
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 {" "}
                 Discover
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Porfolios
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
               {" "}
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 FAQ
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
               {" "}
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Site Guide
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="col-sm-3 ">
-          <h6 className=" text-uppercase mt-5 font-weight-bold text-primary">
+          <h6 className=" text-uppercase mt-5 font-weight-bold text-bizka">
             Information
           </h6>
 
           <ul className="list-unstyled nav flex-column">
             <li className="nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 About US
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 {" "}
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
               {" "}
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Terms &amp;
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
               {" "}
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Condition
-              </a>
+              </Link>
             </li>
             <li className="my-2 nav-item mb-2">
               {" "}
-              <a className="nav-link p-0" href="#">
+              <Link className="nav-link p-0" to="#">
                 Press Release
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -120,32 +121,32 @@ const Footer = () => {
         <div className="col col-lg-3 mt-2">
           <ul className="nav justify-space-between gap-4 list-unstyled list-inline d-flex">
             <li className="list-inline-item">
-              <a className="btn-floating btn-md text-primary" href="#">
+              <Link className="btn-floating btn-md text-bizka" to="#">
                 <p className="fs-2 pr-15">
                   <FontAwesomeIcon icon={faInstagramSquare} />
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="list-inline-item">
-              <a className="btn-floating btn-md text-primary " href="#">
+              <Link className="btn-floating btn-md text-bizka " to="#">
                 <p className="fs-2">
                   <FontAwesomeIcon icon={faFacebook} />
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="list-inline-item">
-              <a className="btn-floating btn-md text-primary" href="#">
+              <Link className="btn-floating btn-md text-bizka" to="#">
                 <p className="fs-2">
                   <FontAwesomeIcon icon={faTwitter} />
                 </p>
-              </a>
+              </Link>
             </li>
             <li className="list-inline-item">
-              <a className="btn-floating btn-md text-primary" href="#">
+              <Link className="btn-floating btn-md text-bizka" to="#">
                 <p className="fs-2">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </p>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -156,14 +157,14 @@ const Footer = () => {
       />
       <div className="row-md-2 col-lg-12 d-flex justify-content-end list-inline py-3">
         <li className="list-inline-item">
-          <a className="col text-decoration-none text-black" href="#">
+          <Link className="col text-decoration-none text-black" to="#">
             Privacy and Security
-          </a>
+          </Link>
         </li>
         <li className="list-inline-item">
-          <a href="#" className="col text-decoration-none text-black">
+          <Link to="#" className="col text-decoration-none text-black">
             Terms and Condition
-          </a>
+          </Link>
         </li>
       </div>
     </div>

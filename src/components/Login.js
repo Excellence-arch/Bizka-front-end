@@ -80,7 +80,7 @@ const Login = () => {
                         </div>
 
                         <div className="text-center mx-3"><button className="btn btn-bizka w-100 p-3 my-3" type="submit">Log in</button> </div>
-                        <p className="text-center">Don't have an account? <Link className="text-warning" to="/login">Sign up</Link></p>
+                        <p className="text-center">Don't have an account? <Link className="text-warning" to="/register">Register</Link></p>
                     </form>                    
                 </div>
             </div>
