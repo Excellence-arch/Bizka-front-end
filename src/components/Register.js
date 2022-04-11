@@ -1,11 +1,12 @@
 import { useFormik } from "formik";
+import axios from 'axios';
 // import logo from "../assets/logo.PNG";
 // import bgRegister from '../assets/sign-up.jfif';
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 
-const Register = ({allCustomers, addNewCustomer}) => {
+const Register = () => {
 
     const [showPwd, setShowPwd] = useState(false);
 
@@ -21,16 +22,8 @@ const Register = ({allCustomers, addNewCustomer}) => {
         validate: (values) => {
             let errors = {};
             let regexForPassword = /^([a-zA-z]{1,}[0-9]{1,}[!@#$%^&*()_+?><]{1,})$/
-            let usernameFound = allCustomers.find((val,_) => values.username === val.username);
-            let emailFound = allCustomers.find((val, _) => val.email === values.email);
             if(values.password !== values.confirmPassword) {
                 errors.confirmPassword = "Must be the same with password";
-            }
-            if(usernameFound) {
-                errors.username = "Username already exist";
-            }
-            if(emailFound) {
-                errors.email = "Email already exist. Please login";
             }
             if (!regexForPassword.test(values.password)) {
                 errors.password = "Password must contain the following in this order: an alphabet, a number and a special character";
@@ -44,8 +37,20 @@ const Register = ({allCustomers, addNewCustomer}) => {
             phone: Yup.number().required("Required")
         }),
         onSubmit: (values) => {
-            // console.log(values)
-            addNewCustomer(values);
+            // axios.post("https://bizka.herokuapp.com/accounts/register/", {
+            //     full_name: values.fullname,
+            //     username: values.username,
+            //     email: values.email,
+            //     phone_number: values.phone,
+            //     password: values.password
+            // })
+            // .then(res => {
+            //     console.log(res);
+            // })
+            // .catch(err => {
+            //     console.log(err);
+            // });
+            console.log(values);
             formik.resetForm({values: ""});
         }
     })
@@ -63,7 +68,7 @@ const Register = ({allCustomers, addNewCustomer}) => {
   return (
     <>
         <section className="">
-            <div className="d-flex column">
+            <div className="d-flex flex-sm-column flex-md-row flex-lg-row">
                 <div className="col-6" style={addStyle} >
                     <div className="text-center mt-5 py-5 col-6 container">
                         <div className="mt-5 p-5"></div>
@@ -72,7 +77,7 @@ const Register = ({allCustomers, addNewCustomer}) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-6 container mt-4 px-4">
+                <div className="col-6 container mt-sm-4 px-sm-4">
                     <form onSubmit={formik.handleSubmit} className="p-3 mx-5" >
                         <div className="text-center mt-3">
                             <img src="/assets/logo.PNG" alt="logo" className="text-center" style={{width: "150px"}} />

@@ -57,7 +57,7 @@ const Navbar = () => {
           <ul className="d-flex mr-3 gap-4">
             <li className="list-inline-item">
               <Link
-                to="/login"
+                to="/accounts/login"
                 className="btn rounded-pill btn-outline-bizka btn-lg"
               >
                 Login
@@ -65,7 +65,7 @@ const Navbar = () => {
             </li>
             <li className="list-inline-item">
               <Link
-              to="/register"
+              to="/accounts/register"
                 className="btn rounded-pill btn-lg btn-bizka"
               >
                 Register
